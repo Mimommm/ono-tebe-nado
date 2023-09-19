@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -13,32 +13,31 @@
     <section class="header">
       <div class="header__menu">
         <ul class="header__links-list">
-          <li class="header__links-list-item header__links-list-item_no-bullit">
-            главная
+          <li class="header__links-list header__links-list-item_no-bullit">
+            <a class="header__link_active" href="#">главная</a>
+          </li>
+          <li class="header__link header__links-list-item">
+            <a href="#">посмотреть лоты</a>
           </li>
           <li class="header__links-list-item">
-            посмотреть лоты
-          </li>
-          <li class="header__links-list-item">
-            об аукционе
+            <a href="#">об аукционе</a>
           </li>
         </ul>
       </div>
-      <img class="header__logo" src="./images/logo-black.svg" alt="Логотип оно тебе надо">
-      
+    <a class="header__logo">
+      <img class="header__logo header__logo-image" src="./images/logo-black.svg" alt="Логотип оно тебе надо">
+    </a>  
       <!--К этому тегу применяются браузерные стили. Их нужно будет сбросить и написать свои.-->
       <address class="address">
-        <p>
-        <a href="tel:+70000000">+7(000)000-00-00</a>
-        <!--посмотреть <br/> насколько нужен-->
-        <a href="mailto:mail@example.com">mail@example.com</a>
-        </p>
-        <!--подумать-->
-        <p>
-          наб. Принсенграхт 263-265, Амстердам
+        <p class="header__address">
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          наб. Принсенграхт 263-265,<br> 
+          Амстердам
         </p>
       </address>
-    </ы>
+    </section>
+    <main>
     <section class="cover">
       <img class="overlay" src=""
     </section>
@@ -46,19 +45,9 @@
     <section class="about">
       <img class="logo logo_place_about" src="" alt="">
     </section>
+  </main>
     <section class="footer">
       <div class="nav nav_place_footer">
-        <ul>
-          <li>
-            главная
-          </li>
-          <li>
-            посмотреть лоты
-          </li>
-          <li>
-            об аукционе
-          </li>
-        </ul>
       </div>
     </section>
   </body>

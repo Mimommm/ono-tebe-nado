@@ -1,60 +1,71 @@
 /* место для вашего кода */
 .header {
-  width: 1340px;
-  height: 109px;
   display: flex;
+  width: 1340px;
+  min-height: 109px;
   margin: 92px 49px 92px 51px;
 }
 
 .header__menu {
   display: flex;
-  width: 388px;
-  height: 23px;
-  flex-shrink: 0; 
+  flex-direction: row;
+  align-items: center;
+  width: calc((100% - 148px) / 2); 
 }
 
 .header__links-list {
   display: flex;
-  flex-direction: row;
 }
 
 .header__links-list-item {
-  width: 168px;
-  height: 23px;
+  margin-left: 26px;
+  list-style: circle;
 }
+
+/* посмотреть margin - лишний */
 
 header__links-list-item_no-bullit {
-  color: #000;
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  margin-left: 0;
 }
 .header__link {
-
+  /*сместить линию подчеркивания ссылки ниже + и для контактов*/
 }
 
 .header__link_active {
-
+  text-decoration: none;
 }
 
 .header__logo {
-
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 148px;
+  padding-bottom: 4px;
 }
 
 .header__logo-image {
-
+  width: 148px;
+  height: 105px;
 }
 
 .address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: calc((100% - 148px) / 2);
   margin: 0;
-  padding: 0;
-  border: 0;
+	padding: 0;
 }
 
+/*подумать над стилизацией ссылок*/
 .header__address {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  line-height: 24.3px;
 }
 
 .overlay {
