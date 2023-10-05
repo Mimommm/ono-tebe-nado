@@ -1,7 +1,12 @@
 /* место для вашего кода */
+body {
+  max-width: 1440px;
+  width: 100%;
+}
+
 .header {
   display: flex;
-  width: 1340px;
+  max-width: 1440px;
   min-height: 109px;
   margin: 92px 49px 92px 51px;
 }
@@ -18,8 +23,14 @@
 }
 
 .header__links-list-item {
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
   margin-left: 26px;
   list-style: circle;
+  text-underline-offset: 4px;
 }
 
 /* посмотреть margin - лишний */
@@ -28,7 +39,7 @@ header__links-list-item_no-bullit {
   margin-left: 0;
 }
 .header__link {
-  /*сместить линию подчеркивания ссылки ниже + и для контактов*/
+  /* а че вообще здесь писать????? */
 }
 
 .header__link_active {
@@ -66,9 +77,268 @@ header__links-list-item_no-bullit {
   justify-content: space-around;
   align-items: flex-start;
   line-height: 24.3px;
+  text-underline-offset: 4px;
 }
-/*
+
+/*height*/
+.cover {
+  max-width: 1440px;
+  width: 100%;
+  min-height: 763.939px;
+  position: relative;
+  background-image: url(../images/cover.jpg);
+  background-position: center; 
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
 .overlay {
-  background-image:  ;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
-*/
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  max-width: 1340px;
+  min-height: 355px;
+  margin: 165px 50px 237px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  margin-bottom: 217px;
+  z-index: 2;
+  color: #FFF;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  display: flex;
+  position: relative;
+  max-width: 1340px;
+  min-height: 115px;
+}
+
+.aligned-text_center {
+  display: flex;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 20px 0;
+}
+
+.aligned-text_right {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1340px;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+
+.cover__description {
+  display: flex;
+  position: static;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 67px;
+}
+
+.cover__description-text {
+  color: #FFF;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing: 20px;
+  z-index: 3;
+}
+
+.bet-button {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-end;
+  color: #FFF;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase; 
+  z-index: 3;
+  background-color: transparent;
+}
+
+/* доделать кнопку засчет отсутствия скрола по горизонтали */
+
+.bet-button_right {
+  border: 1px solid #fff;
+  text-decoration: none;
+  padding: 10px 30px;
+  position: relative;
+}
+
+.lots {
+  max-width: 1440px;
+  padding: 180px 50px 3px;
+}
+
+.lots__heading {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0 0 27px 40px;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 25px;
+}
+
+/* подумать min/max width и height*/
+.lots__card-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  width: 430px;
+  list-style-type: none;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+/* подумать min/max width и height*/
+.card {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  border: 1px solid rgb(0, 0, 0);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+} 
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+} 
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+/* подумать min/max width и height и в .lots__card-list-item .card  */
+.card__title {
+  width: 350px;
+  max-height: 80px;
+  position: relative;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+/* подумать min/max width и height и в .lots__card-list-item .card*/
+.card__text {
+  width: 350px;
+  max-height: 240px;
+  position: relative;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+}
+
+.lots__look-more-link {
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  padding: 35px 0 0 40px;
+}
+
+.about {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 430px 25px 2fr;
+  grid-template-rows: 100px 46px 100px 97px 25px 119px;
+  max-width: 1340px;
+  width: 100%;
+  margin: 180px 50px 0;
+}
+
+.about__logo {
+   /*7px margin (яда) 1колонки 3ряда*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 240px;
+  min-height: 240px;
+  max-width: 148px;
+  background-color: #000;
+  border-radius: 50% 50%;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__column {
+  /*смотреть свойство напрвления во второй колонке (разное направление)*/
+  display: grid;
+  height: 388px;
+  padding-bottom: 0px;
+  gap: 100px;
+}
+
+.about__title {
+  grid-area: ;
+  text-transform: uppercase;
+  grid-area: 3/3;
+}
+
+.about__text {
+
+}
