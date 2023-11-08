@@ -62,20 +62,17 @@ header__links-list-item_no-bullit {
 
 .address {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
   width: calc((100% - 148px) / 2);
   margin: 0;
 	padding: 0;
 }
 
-/*подумать над стилизацией ссылок*/
 .header__address {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
   line-height: 24.3px;
   text-underline-offset: 4px;
 }
@@ -156,7 +153,8 @@ header__links-list-item_no-bullit {
   position: static;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-bottom: 67px;
+  padding-bottom: 62px;
+  padding-left: 50px;
 }
 
 .cover__description-text {
@@ -184,6 +182,7 @@ header__links-list-item_no-bullit {
   text-transform: uppercase; 
   z-index: 3;
   background-color: transparent;
+  margin: 0 50px 0px 70px
 }
 
 /* доделать кнопку засчет отсутствия скрола по горизонтали */
@@ -229,11 +228,13 @@ header__links-list-item_no-bullit {
   list-style-type: none;
 }
 
+
 .card-link {
+  display: flex;
   text-decoration: none;
 }
 
-/* подумать min/max width и height*/
+/* подумать min/max width и height расширение с flex-basis flex-grow*/
 .card {
   width: 100%;
   height: 100%;
@@ -299,13 +300,9 @@ header__links-list-item_no-bullit {
 }
 
 .about {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 430px 25px 2fr;
-  grid-template-rows: 100px 46px 100px 97px 25px 119px;
   max-width: 1340px;
   width: 100%;
-  margin: 180px 50px 0;
+  margin: 180px 50px;
 }
 
 .about__logo {
@@ -313,6 +310,8 @@ header__links-list-item_no-bullit {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 95px;
+  grid-area: 1/1/4/2;
   min-width: 240px;
   min-height: 240px;
   max-width: 148px;
@@ -325,20 +324,116 @@ header__links-list-item_no-bullit {
   height: 114px;
 }
 
+/*вроде не нужен min-height: 388px;*/
 .about__column {
-  /*смотреть свойство напрвления во второй колонке (разное направление)*/
   display: grid;
-  height: 388px;
-  padding-bottom: 0px;
-  gap: 100px;
+  grid-template-columns: 430px 2fr;
+  grid-template-rows: 100px 46px 100px 97px 25px 119px;
+  align-items: center;
+  column-gap: 20px;
 }
 
+/*возможно изменить на inline-block*/
 .about__title {
-  grid-area: ;
   text-transform: uppercase;
-  grid-area: 3/3;
+  grid-area: 2/2/3/3;
+  column-gap: 25px;
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+/*возможно изменить на inline-block*/
+.about__text {
+  display: inline-block;
+  position: absolute;
+  grid-area: 2/4/3/5;
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.about__text {
 
+.footer {
+  display: flex;
+  max-width: 1440px;
+  min-height: 109px;
+  margin: 0 50px 50px;
+}
+
+.address p:nth-of-type(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: calc((100% - 148px) / 2);
+  margin: 0;
+	padding: 0;
+}
+
+.header__address p:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  line-height: 24.3px;
+  text-underline-offset: 4px;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: calc((100% - 148px) / 2); 
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__menu-list-item {
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 26px;
+  list-style: circle;
+  text-underline-offset: 4px;
+  list-style-type: none;
+}
+
+.footer__menu-link {
+  /* а че вообще здесь писать????? */
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 148px;
+  padding-bottom: 4px;
+}
+
+.footer__social-list-item {
+  width: 148px;
+  height: 105px;
+}
+
+.footer__social-link {
+
+}
+
+.footer__social-icon {
+  
 }
