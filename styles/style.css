@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: calc((100% - 148px) / 2); 
+  width: calc((100% - 148px) / 2);
 }
 
 .header__links-list {
@@ -87,8 +87,8 @@ header__links-list-item_no-bullit {
   min-height: 763.939px;
   position: relative;
   background-image: url(../images/cover.jpg);
-  background-position: center; 
-  background-size: cover; 
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -182,7 +182,7 @@ header__links-list-item_no-bullit {
   font-size: 22px;
   font-weight: 400;
   line-height: normal;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   z-index: 3;
   background-color: transparent;
   margin: 0 50px 0px 85px;
