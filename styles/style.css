@@ -189,7 +189,6 @@ header__links-list-item_no-bullit {
 }
 
 /* доделать кнопку засчет отсутствия скрола по горизонтали */
-
 .bet-button_right {
   border: 1px solid #fff;
   text-decoration: none;
@@ -343,7 +342,6 @@ header__links-list-item_no-bullit {
 
 /*возможно изменить на inline-block*/
 .about__title {
-  text-transform: uppercase;
   grid-area: 2/2/3/3;
   color: #000;
   font-family: Raleway;
@@ -396,7 +394,6 @@ header__links-list-item_no-bullit {
   font-style: normal;
   font-weight: 400;
   line-height: 24.3px;
-  padding-right: 3px;
   padding-right: 202px;
   padding-bottom: 13px;
 }
@@ -424,10 +421,11 @@ header__links-list-item_no-bullit {
   text-underline-offset: 4px;
   list-style-type: none;
 }
-
+/* 
 .footer__menu-link {
-  
+  а че вообще здесь писать????? 
 }
+*/
 
 .footer__menu-link_active {
   text-decoration: none;
@@ -441,6 +439,7 @@ header__links-list-item_no-bullit {
   padding-right: 17px;
 }
 
+/* 
 .footer__social-list-item {
   
 }
@@ -452,3 +451,4 @@ header__links-list-item_no-bullit {
 .footer__social-icon {
   
 }
+*/
