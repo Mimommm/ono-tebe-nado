@@ -7,7 +7,7 @@ body {
   display: flex;
   max-width: 1440px;
   min-height: 109px;
-  margin: 92px 49px 92px 51px;
+  padding: 93px 49px 95px 51px;
 }
 
 .header__menu {
@@ -29,7 +29,7 @@ body {
   font-weight: 400;
   padding-right: 32px;
   list-style: circle;
-  text-underline-offset: 4px;
+  text-underline-offset: 5px;
 }
 
 header__links-list-item_no-bullit {
@@ -195,7 +195,7 @@ header__links-list-item_no-bullit {
 
 .lots {
   max-width: 1440px;
-  padding: 174px 50px 3px;
+  padding: 173px 50px 3px;
   position: relative;
   width: 100%;
 
@@ -263,7 +263,7 @@ header__links-list-item_no-bullit {
 }
 
 .card__title {
-  top: 48px;
+  top: 49px;
   width: 350px;
   max-height: 80px;
   position: relative;
@@ -275,11 +275,12 @@ header__links-list-item_no-bullit {
   line-height: 120%;
   text-decoration-line: underline;
   text-transform: uppercase;
+  text-underline-offset: 3px;
   z-index: 2;
 }
 
 .card__text {
-  bottom: 50px;
+  bottom: 49px;
   width: 350px;
   max-height: 240px;
   position: relative;
@@ -305,9 +306,9 @@ header__links-list-item_no-bullit {
 }
 
 .about {
-  max-width: 1340px;
+  max-width: 1440px;
   width: 100%;
-  margin: 180px 50px 178px 50px;
+  padding: 180px 50px 178px 50px;
 }
 
 .about__logo {
@@ -368,14 +369,14 @@ header__links-list-item_no-bullit {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-top: 23px;
+  padding-top: 25px;
 }
 
 .footer {
   display: flex;
   max-width: 1440px;
   min-height: 109px;
-  margin: 0px 50px 77px 50px;
+  padding: 0px 50px 77px 50px;
 }
 
 .footer__address {
@@ -383,8 +384,6 @@ header__links-list-item_no-bullit {
   flex-direction: column;
   align-items: flex-start;
   text-underline-offset: 4px;
-  color: #000;
-  font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -406,12 +405,9 @@ header__links-list-item_no-bullit {
 }
 
 .footer__menu-list-item {
-  color: #000;
-  font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  list-style: circle;
   text-underline-offset: 4px;
   list-style-type: none;
 }
